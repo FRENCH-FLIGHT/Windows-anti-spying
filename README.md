@@ -21,11 +21,47 @@ Le fichier batch fourni permet l'exécution automatique du script PowerShell. So
 
 `run-script.bat`
 
-3\. Objectif
+Execution Automatique
+-----------------
+1) Télécharger et placer le script `DisableTracking.ps1` dans le dossier téléchargements (tout autre emplacement empêchera l'exécution automatique)
+
+2) Télécharger le fichier `run-script.bat` et l'exécuter.
+
+3) Sélectionner dans la fenêtre Powershell l'option souhaitée
+
+4) Et voilà, le tour est joué :)
+
+Execution Manuelle (utilisateurs avancés)
+-----------------
+Si vous préférez ne pas utiliser le fichier batch fourni et souhaitez exécuter manuellement le script PowerShell depuis le dossier de téléchargement, suivez ces étapes simples :
+
+1) Téléchargez le script PowerShell depuis le dépôt GitHub et enregistrez-le dans votre dossier de téléchargement.
+    
+2) **Ouverture de PowerShell** :
+    
+    *   Appuyez sur la touche `Windows` + `X` pour ouvrir le menu de raccourcis.
+    *   Sélectionnez "Windows PowerShell" ou "PowerShell" (en tant qu'administrateur si possible).
+      
+3)  **Autorisation de l'Exécution de Scripts** : Avant d'exécuter le script, vous pourriez devoir autoriser l'exécution des scripts PowerShell. Utilisez la commande suivante dans PowerShell (en tant qu'administrateur) :
+   `Set-ExecutionPolicy RemoteSigned`
+    
+4.  **Navigation vers le Dossier de Téléchargement** : Utilisez la commande `cd` pour naviguer vers le dossier où vous avez téléchargé le script. Par exemple : `cd C:\CheminduTelechargement`
+    
+5.  **Exécution du Script PowerShell :** Exécutez le script à l'aide de la commande suivante :
+    `.\DisableTracking.ps1`
+    
+7.  **Vérification de l'Exécution :** Après l'exécution, le script devrait ajouter avec succès les entrées nécessaires dans le fichier hosts pour bloquer les liens de suivi Microsoft. Vous pouvez vérifier en ouvrant le fichier hosts avec un éditeur de texte.
+    
+
+Assurez-vous de respecter toutes les autorisations nécessaires et de comprendre les implications de l'exécution de ce script sur votre système. En cas de doute, consultez la documentation PowerShell ou le dépôt GitHub du projet pour des informations supplémentaires.
+
+Objectifs
+------------------
 
 L'objectif principal de ce projet est d'offrir aux utilisateurs une solution facile à déployer pour bloquer les tentatives de suivi de liens par Microsoft. En modifiant le fichier hosts, l'utilisateur renforce sa confidentialité en limitant la collecte de données par ces mécanismes de suivi.
 
-4\. Utilisation Responsable
+Utilisation responsable
+------------------
 
 Il est essentiel de noter que l'utilisation de ce projet doit respecter toutes les lois et réglementations en vigueur. Bien que le blocage des liens de suivi puisse renforcer la confidentialité, il est crucial d'adopter une approche responsable et légale dans son utilisation.
 
