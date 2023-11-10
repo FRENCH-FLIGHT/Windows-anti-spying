@@ -12,19 +12,11 @@ Contenu du Projet
 
 Le script PowerShell inclus dans ce projet automatise le processus de modification du fichier hosts. Il ajoute l'adresse IP 127.0.0.1 devant toutes les URLs connues pour le suivi de liens par Microsoft.
 
-Utilisation :
-
-scssCopy code
-
-`.\block-tracking.ps1`
+`.\DisableTracking.ps1`
 
 ### 2\. Fichier Batch (run-script.bat)
 
 Le fichier batch fourni permet l'exécution automatique du script PowerShell. Son utilisation simple garantit une mise en œuvre efficace du blocage des liens de suivi Microsoft.
-
-Utilisation :
-
-undefinedCopy code
 
 `run-script.bat`
 
