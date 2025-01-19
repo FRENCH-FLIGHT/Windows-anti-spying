@@ -60,11 +60,6 @@ Objectifs
 
 L'objectif principal de ce projet est d'offrir aux utilisateurs une solution facile à déployer pour bloquer les tentatives de suivi de liens par Microsoft. En modifiant le fichier hosts, l'utilisateur renforce sa confidentialité en limitant la collecte de données par ces mécanismes de suivi.
 
-Utilisation responsable
-------------------
-
-Il est essentiel de noter que l'utilisation de ce projet doit respecter toutes les lois et réglementations en vigueur. Bien que le blocage des liens de suivi puisse renforcer la confidentialité, il est crucial d'adopter une approche responsable et légale dans son utilisation.
-
 Comment Contribuer
 ------------------
 
